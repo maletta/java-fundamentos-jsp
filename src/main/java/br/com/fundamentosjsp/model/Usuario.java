@@ -2,6 +2,10 @@ package br.com.fundamentosjsp.model;
 
 public class Usuario {
 
+	private Integer id;
+	private String login;
+	private String nome;
+	private String senha;
 	public Integer getId() {
 		return id;
 	}
@@ -26,8 +30,11 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
-	private Integer id;
-	private String login;
-	private String nome;
-	private String senha;
+	
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", login=" + login + ", nome=" + nome + ", senha=" + senha + "]";
+	}
+
+
 }
