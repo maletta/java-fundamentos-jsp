@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset="utf-8">
+	<title> form usuario </title>
+</head>
+<body>
+
+<h1> Criar / Alterar  </h1>
+<form action="usuarioController" method="post">
+	
+	<label>Id: </label><input text="text"  name="id" />
+	<label>Nome: </label><input text="text"  name="nome" />
+	<label>Login: </label><input text="text"  name="login" />
+	<label>Senha: </label><input text="text"  name="senha" />
+	
+	<input type="submit" value="Salvar"/>
+	
+</form>
+<br>
+
+<h1> Deletar </h1>
+
+<form action="usuarioController" method="delete">
+	
+	<label>Id: </label><input text="text"  name="id" />
+	
+	<input type="submit" value="Deletar"/>
+	
+</form>
+<br>
+
+<h1> buscar todos </h1>
+<form action="usuarioController" method="get">
+	
+	<input type="submit" value="BuscarTodos"/>
+	
+</form>
+
+</body>
+</html>
